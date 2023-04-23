@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Object Detection App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        background-color: #4CAF50;
+        color: white;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+      }
+      form {
+        margin: 20px auto;
+        max-width: 500px;
+        text-align: center;
+      }
+      input[type=file] {
+        border: none;
+        font-size: 1.2em;
+        padding: 10px;
+        margin-top: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        transition: box-shadow 0.2s ease-in-out;
+      }
+      input[type=file]:hover {
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      }
+      input[type=submit] {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        font-size: 1.2em;
+        padding: 10px;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        transition: box-shadow 0.2s ease-in-out;
+      }
+      input[type=submit]:hover {
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Object Detection App</h1>
+    <form method="post" enctype="multipart/form-data">
+      <input type="file" name="image">
+      <br>
+      <input type="submit" value="Upload">
+    </form>
+    
+  </body>
+</html>
